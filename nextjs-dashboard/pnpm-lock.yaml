@@ -50,6 +50,9 @@ importers:
       use-debounce:
         specifier: ^10.0.4
         version: 10.0.4(react@19.1.0)
+      use-debounced:
+        specifier: ^1.2.0
+        version: 1.2.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       zod:
         specifier: ^3.25.17
         version: 3.25.17
@@ -1048,6 +1051,12 @@ packages:
     peerDependencies:
       react: '*'
 
+  use-debounced@1.2.0:
+    resolution: {integrity: sha512-pdME2mN3exLZ9QHdiEVDIelfuv+A142nxdXHcsECt0ticlL7vpuYKei8gb4+pIvX8XR9jafWg36yMvcHcguVqQ==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
@@ -1987,6 +1996,12 @@ snapshots:
   use-debounce@10.0.4(react@19.1.0):
     dependencies:
       react: 19.1.0
+
+  use-debounced@1.2.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
+    dependencies:
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      tslib: 2.8.1
 
   util-deprecate@1.0.2: {}
 
